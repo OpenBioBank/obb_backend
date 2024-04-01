@@ -15,6 +15,8 @@ const envVarsSchema = Joi.object()
     JWT_RESET_PASSWORD_EXPIRATION_MINUTES: Joi.number()
       .default(10)
       .description('minutes after which reset password token expires'),
+    PINANTA_API_KEY: Joi.string(),
+    PINANTA_SECRET_API_KEY: Joi.string(),
   })
   .unknown()
 
@@ -40,5 +42,9 @@ module.exports = {
     accessExpirationMinutes: envVars.JWT_ACCESS_EXPIRATION_MINUTES,
     refreshExpirationDays: envVars.JWT_REFRESH_EXPIRATION_DAYS,
     resetPasswordExpirationMinutes: envVars.JWT_RESET_PASSWORD_EXPIRATION_MINUTES,
+  },
+  pinantaCloud: {
+    apikey: envVars.PINANTA_API_KEY,
+    secret: envVars.PINANTA_SECRET_API_KEY,
   }
 }
