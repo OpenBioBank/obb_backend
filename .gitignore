@@ -11,3 +11,5 @@ package-lock.json
 
 # Code coverage
 coverage
+uploads/*
+!uploads/.gitkeep
