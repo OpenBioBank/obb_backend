@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const helmet = require('helmet')
 const xss = require('xss-clean')
 const mongoSanitize = require('express-mongo-sanitize')
@@ -19,6 +20,10 @@ if (config.env !== 'test') {
   app.use(morgan.successHandler)
   app.use(morgan.errorHandler)
 }
+
+const paths = path.join(__dirname, 'public')
+
+app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.use(helmet())
 

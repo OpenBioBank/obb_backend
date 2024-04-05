@@ -13,3 +13,4 @@ package-lock.json
 coverage
 uploads/*
 !uploads/.gitkeep
+src/public

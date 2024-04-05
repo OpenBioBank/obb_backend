@@ -22,7 +22,7 @@ const saveToDist = async (files) => {
     const gcContent = calculateGCContent(pnaParams.str)
     const cid = await saveToPinata(readableStreamForFile)
     return {
-        message: "uploda success!",
+        message: "upload success!",
         cid: cid['IpfsHash'],
         agct: getPnaAGCT['agctString'],
         gcContent,
@@ -80,6 +80,12 @@ const calculateGCContent = (str) => {
     return cgContent
 }
 
+const getGCContent = () => {
+    const jsonData = fs.readFileSync(resolve(__dirname, './json/genomes.json'), 'utf-8')
+    return JSON.parse(jsonData)
+}
+
 module.exports = {
-    saveToDist
+    saveToDist,
+    getGCContent
 }

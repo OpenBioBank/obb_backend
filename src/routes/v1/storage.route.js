@@ -8,5 +8,6 @@ const upload = multer()
 const router = express.Router()
 
 router.post('/sampleCollection', upload.array('files'), validate(storageValidation.sampleCollection), storageController.sampleCollection)
+router.get('/getGenomes', storageController.getGenomes)
 
 module.exports = router
