@@ -24,6 +24,7 @@ const saveToDist = async (files) => {
     return {
         message: "upload success!",
         cid: cid['IpfsHash'],
+        url: 'https://green-sad-canidae-844.mypinata.cloud/ipfs/' + cid['IpfsHash'],
         agct: getPnaAGCT['agctString'],
         gcContent,
         timestamp: Date.now()
