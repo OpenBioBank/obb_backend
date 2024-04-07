@@ -6,8 +6,8 @@ const saveNFTRecord = async ({nftSymbol, creator, cid, url, agct, gcContent} = p
         creator,
         cid,
         url,
-        agct,
         gcContent,
+        agct,
         timestamp: Date.now()
     })
     
@@ -25,7 +25,16 @@ const getNFTRecord = async (params, options) => {
     }
 }
 
+const getNFTByCreator = async (params, options) => {
+    const tokenRes = await NFT.paginate(params, options)
+    return {
+        message: "",
+        data: tokenRes
+    }
+}
+
 module.exports = {
     saveNFTRecord,
-    getNFTRecord
+    getNFTRecord,
+    getNFTByCreator
 }

@@ -36,8 +36,14 @@ const nftSymbol = (value, helpers) => {
   }
 }
 
+const mimetype = (value, helpers) => {
+  console.log('nftSymbol==>', value)
+  return value
+}
+
 module.exports = {
   nftSymbol,
   objectId,
-  password
+  password,
+  mimetype
 }

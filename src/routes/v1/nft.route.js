@@ -7,5 +7,6 @@ const router = express.Router()
 
 router.post('/saveNFTInfo', validate(NFTValidation.saveNFTInfo), NFTController.saveNFTInfo)
 router.get('/getNFTInfo', NFTController.getNFTInfo)
+router.get('/getNFTByCreator', NFTController.getNFTByCreator)
 
 module.exports = router

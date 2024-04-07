@@ -5,36 +5,94 @@ const config = require('../config/config')
 const readline = require('readline')
 const pinata = new pinataSDK({ pinataApiKey: config.pinantaCloud.apikey, pinataSecretApiKey: config.pinantaCloud.secret })
 
-const saveToDist = async (files) => {
+const nftJsonTemplate = (name, symbol, creators) => {
+    console.log('symbol===>', symbol)
+    console.log('creators===>', creators)
+    return {
+        "name": name,
+        "symbol": symbol,
+        "image": "https://green-sad-canidae-844.mypinata.cloud/ipfs/Qmf5oXtVwkTAhaou7QxSTP17Ki8WASaW8Acc6yyaQ57TvT",
+        "properties": {
+            "files": [
+              {
+                "uri": "https://green-sad-canidae-844.mypinata.cloud/ipfs/Qmf5oXtVwkTAhaou7QxSTP17Ki8WASaW8Acc6yyaQ57TvT",
+                "type": "image/png"
+              }
+            ],
+            "creators": [
+              {
+                "address": creators,
+                "share": 1
+              }
+            ],
+            "category": null
+          }
+    }
+}
+
+const deleteFile = (filePath) => {
+    fs.unlink(filePath, (err) => {  
+        if (err) {  
+          console.error(`delete file: ${err}`);  
+        } else {  
+          console.log(`${filePath} delete success`);  
+        }  
+      });
+}
+
+const saveToDist = async (files, sampleType, address) => {
     let pnaParams = {
         str: ''
     }
-    let filePath = resolve(`./uploads/${Date.now()}${files.originalname}`)
-    const text = files.buffer.toString()
-    fs.writeFileSync(filePath, files.buffer, (err) => {
+    let fileName = `${Date.now()}${files.originalname}`
+    let filePath = resolve(`./uploads/${fileName}`)
+    let texts = files.buffer.toString('utf8')
+    let newText = texts.toUpperCase()
+    let newBuffer = Buffer.from(newText, 'utf8');
+
+    let nftJson = nftJsonTemplate('biobank', sampleType, address)
+    let nftJsonFile = filePath + '.json'
+
+    console.log('filePath==>', filePath)
+    console.log('nftJsonFile==>', nftJsonFile)
+    fs.writeFileSync(nftJsonFile, JSON.stringify(nftJson), (err)=> {
+        if(err) {
+            throw new ApiError(httpStatus.INTERNAL_SERVER_ERROR, 'upload faild')
+        }
+    })
+    fs.writeFileSync(filePath, newBuffer, (err) => {
         if(err) {
             throw new ApiError(httpStatus.INTERNAL_SERVER_ERROR, 'upload faild')
         }
     })
     const readableStreamForFile = fs.createReadStream(filePath)
 
-    const getPnaAGCT = await getPnaDetail(readableStreamForFile, pnaParams)
+    await getPnaDetail(readableStreamForFile, pnaParams)
+    const getPnaAGCT = pnaParams.str.slice(0, 96)
     const gcContent = calculateGCContent(pnaParams.str)
-    const cid = await saveToPinata(readableStreamForFile)
+
+    const jsonStream = fs.createReadStream(nftJsonFile)
+    const cid = await saveToPinata(jsonStream)
+
+    // deleteFile(filePath)
+    // deleteFile(nftJsonFile)
+    console.log(getPnaAGCT, 'agctstring')
+    // 删除文件
     return {
         message: "upload success!",
         cid: cid['IpfsHash'],
         url: 'https://green-sad-canidae-844.mypinata.cloud/ipfs/' + cid['IpfsHash'],
-        agct: getPnaAGCT['agctString'],
+        agct: getPnaAGCT,
         gcContent,
         timestamp: Date.now()
     }
 }
 
+
 const saveToPinata = async (readableStreamForFile) => {
     const options = {
         pinataMetadata: {
-            name: 'pna',
+            name: 'gene_nft',
             keyvalues: {
                 customKey: 'meta_pna'
             }
@@ -61,11 +119,10 @@ const getPnaDetail = async(readableStreamForFile, pnaParams) => {
             .on('line', (line) => {
                 lineNumber += 1
                 if (lineNumber == 2) {
-                    gcString = line.toString()
-                    resolve({agctString: gcString.slice(0, 16)})
+                    resolve()
                 }
                 if (lineNumber >= 2) {
-                    pnaParams.str += line.toString().trim()
+                    pnaParams.str += line.toString().toUpperCase().trim()
                 }
             })
             .on('close', () => {

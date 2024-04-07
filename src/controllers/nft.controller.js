@@ -5,8 +5,6 @@ const pick = require('../utils/pick');
 
 
 const saveNFTInfo = catchAsync(async (req, res) => {
-    console.log('params====>', req.body)
-
     const result = await nftService.saveNFTRecord(req.body)
     res.status(httpStatus.OK).send({
         code: 200,
@@ -15,7 +13,7 @@ const saveNFTInfo = catchAsync(async (req, res) => {
 })
 
 const getNFTInfo = catchAsync(async (req, res) => {
-    const filter = pick(req.query, ['nftSymbol']);
+    const filter = pick(req.query, ['nftSymbol',]);
     const options = pick(req.query, ['limit', 'page']);
 
     const result = await nftService.getNFTRecord(filter, options)
@@ -25,7 +23,19 @@ const getNFTInfo = catchAsync(async (req, res) => {
     })
 })
 
+const getNFTByCreator = catchAsync(async (req, res) => {
+    const filter = pick(req.query, ['nftSymbol', 'creator']);
+    const options = pick(req.query, ['limit', 'page']);
+
+    const result = await nftService.getNFTByCreator(filter, options)
+    res.status(httpStatus.OK).send({
+        code: 200,
+        data: result
+    })
+})
+
 module.exports = {
     saveNFTInfo,
-    getNFTInfo
+    getNFTInfo,
+    getNFTByCreator
 }
