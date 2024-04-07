@@ -15,7 +15,29 @@ const password = (value, helpers) => {
   return value
 }
 
+const nftSymbol = (value, helpers) => {
+  console.log('nftSymbol==>', value)
+  switch (value) {
+    case 'phages':
+      return value
+      break;
+    case 'viruses':
+      return value
+      break;
+    case 'bacteria':
+      return value
+      break;
+    case 'fungi':
+      return value
+      break;
+    default:
+      return helpers.message('Unsupported Symbol, Please check your incoming symbol')
+      break;
+  }
+}
+
 module.exports = {
+  nftSymbol,
   objectId,
-  password,
+  password
 }
