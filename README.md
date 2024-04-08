@@ -1,6 +1,9 @@
 # obb_backend
 
 ## Project Setup
+```sh
+cp .env.example .env
+```
 
 ```sh
 yarn install
