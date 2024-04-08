@@ -1,13 +1,14 @@
 const fs = require('fs')
-const { resolve } = require('path')
+const { resolve, basename } = require('path')
 const pinataSDK = require('@pinata/sdk')
 const config = require('../config/config')
 const readline = require('readline')
 const pinata = new pinataSDK({ pinataApiKey: config.pinantaCloud.apikey, pinataSecretApiKey: config.pinantaCloud.secret })
+const axios = require('axios')
+const FormData = require('form-data')
+const uuid = require('../utils/uuid');
 
 const nftJsonTemplate = (name, symbol, creators) => {
-    console.log('symbol===>', symbol)
-    console.log('creators===>', creators)
     return {
         "name": name,
         "symbol": symbol,
@@ -25,7 +26,8 @@ const nftJsonTemplate = (name, symbol, creators) => {
                 "share": 1
               }
             ],
-            "category": null
+            "category": null,
+            "seed": uuid()
           }
     }
 }
@@ -33,9 +35,9 @@ const nftJsonTemplate = (name, symbol, creators) => {
 const deleteFile = (filePath) => {
     fs.unlink(filePath, (err) => {  
         if (err) {  
-          console.error(`delete file: ${err}`);  
+          console.error(`delete file: ${err}`)
         } else {  
-          console.log(`${filePath} delete success`);  
+          console.log(`${filePath} delete success`)
         }  
       });
 }
@@ -73,11 +75,9 @@ const saveToDist = async (files, sampleType, address) => {
 
     const jsonStream = fs.createReadStream(nftJsonFile)
     const cid = await saveToPinata(jsonStream)
+    sendFileEncrypt(filePath, cid['IpfsHash'])
 
-    // deleteFile(filePath)
-    // deleteFile(nftJsonFile)
-    console.log(getPnaAGCT, 'agctstring')
-    // 删除文件
+    deleteFile(nftJsonFile)
     return {
         message: "upload success!",
         cid: cid['IpfsHash'],
@@ -88,6 +88,22 @@ const saveToDist = async (files, sampleType, address) => {
     }
 }
 
+const sendFileEncrypt = async(filePath, cid) => {
+    const targetUrl = '47.238.200.142:3000/upload'
+    const formData = new FormData();  
+    const fileContent = fs.readFileSync(filePath)
+     
+
+    // 读取文件并添加到 FormData
+    // formData.append('file', fs.createReadStream(filePath))
+    formData.append('file', fileContent, basename(filePath))
+    formData.append('cid', cid)
+
+    await axios.post('http://47.238.200.142:3000/upload', formData, {
+        headers: formData.getHeaders(),
+    })
+    deleteFile(filePath)
+}
 
 const saveToPinata = async (readableStreamForFile) => {
     const options = {
@@ -108,8 +124,6 @@ const saveToPinata = async (readableStreamForFile) => {
 
 const getPnaDetail = async(readableStreamForFile, pnaParams) => {
     let lineNumber = 0
-    let gcString = ''
-    let agctString = ''
     return new Promise(resolve => {
         const rl = readline.createInterface({
             input: readableStreamForFile,
