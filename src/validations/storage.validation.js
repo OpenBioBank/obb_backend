@@ -15,8 +15,8 @@ const sampleCollection = {
     body: Joi.object().keys({
         sampleType: Joi.string().required(),
         manufacturer: Joi.string().required(),
-        code: Joi.string().required(),
         address: Joi.string().required(),
+        desc: Joi.string(),
     })
 }
 

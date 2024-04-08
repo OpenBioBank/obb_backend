@@ -8,7 +8,7 @@ const axios = require('axios')
 const FormData = require('form-data')
 const uuid = require('../utils/uuid');
 
-const nftJsonTemplate = (name, symbol, creators) => {
+const nftJsonTemplate = (name, symbol, creators, desc='') => {
     return {
         "name": name,
         "symbol": symbol,
@@ -26,7 +26,7 @@ const nftJsonTemplate = (name, symbol, creators) => {
                 "share": 1
               }
             ],
-            "category": null,
+            "description": desc,
             "seed": uuid()
           }
     }
@@ -42,7 +42,7 @@ const deleteFile = (filePath) => {
       });
 }
 
-const saveToDist = async (files, sampleType, address) => {
+const saveToDist = async (files, sampleType, address, desc) => {
     let pnaParams = {
         str: ''
     }
@@ -52,11 +52,8 @@ const saveToDist = async (files, sampleType, address) => {
     let newText = texts.toUpperCase()
     let newBuffer = Buffer.from(newText, 'utf8');
 
-    let nftJson = nftJsonTemplate('biobank', sampleType, address)
+    let nftJson = nftJsonTemplate('biobank', sampleType, address, desc)
     let nftJsonFile = filePath + '.json'
-
-    console.log('filePath==>', filePath)
-    console.log('nftJsonFile==>', nftJsonFile)
     fs.writeFileSync(nftJsonFile, JSON.stringify(nftJson), (err)=> {
         if(err) {
             throw new ApiError(httpStatus.INTERNAL_SERVER_ERROR, 'upload faild')
@@ -84,22 +81,19 @@ const saveToDist = async (files, sampleType, address) => {
         url: 'https://green-sad-canidae-844.mypinata.cloud/ipfs/' + cid['IpfsHash'],
         agct: getPnaAGCT,
         gcContent,
+        desc,
         timestamp: Date.now()
     }
 }
 
 const sendFileEncrypt = async(filePath, cid) => {
-    const targetUrl = '47.238.200.142:3000/upload'
+    const targetUrl = 'http://47.238.200.142:3000/upload'
     const formData = new FormData();  
     const fileContent = fs.readFileSync(filePath)
-     
-
-    // 读取文件并添加到 FormData
-    // formData.append('file', fs.createReadStream(filePath))
     formData.append('file', fileContent, basename(filePath))
     formData.append('cid', cid)
 
-    await axios.post('http://47.238.200.142:3000/upload', formData, {
+    await axios.post(targetUrl, formData, {
         headers: formData.getHeaders(),
     })
     deleteFile(filePath)

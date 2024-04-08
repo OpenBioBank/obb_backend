@@ -1,6 +1,6 @@
 const { NFT } = require('../models');
 
-const saveNFTRecord = async ({nftSymbol, creator, cid, url, agct, gcContent} = params) => {
+const saveNFTRecord = async ({nftSymbol, creator, cid, url, agct, gcContent, desc} = params) => {
     NFT.create({
         nftSymbol,
         creator,
@@ -8,6 +8,7 @@ const saveNFTRecord = async ({nftSymbol, creator, cid, url, agct, gcContent} = p
         url,
         gcContent,
         agct,
+        desc,
         timestamp: Date.now()
     })
     

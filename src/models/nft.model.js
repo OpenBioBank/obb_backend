@@ -27,6 +27,10 @@ const nftSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    desc: {
+      type: String,
+      required: false,
+    },
     timestamp: {
       type: Number,
       required: true,

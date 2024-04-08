@@ -9,6 +9,7 @@ const saveNFTInfo = {
         cid: Joi.string().required(),
         url: Joi.string().required(),
         agct: Joi.string().required(),
+        desc: Joi.string(),
         gcContent: Joi.string().required()
     })
 }
