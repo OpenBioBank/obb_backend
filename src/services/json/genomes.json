@@ -7,31 +7,31 @@
                 "label": "T4 phage",
                 "value": "01_T4_phage_genomic.fna",
                 "description": "广泛研究的模型噬菌体，对分子生物学的基本过程了解颇深。",
-                "uri": "www.openbiobank.xyz/Phages/01_T4_phage_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Phages/01_T4_phage_genomic.fna"
             },
             {
                 "label": "λ phage",
                 "value": "02_λ_phage_genomic.fna",
                 "description": "在基因表达调控和遗传重组研究中扮演重要角色。",
-                "uri": "www.openbiobank.xyz/Phages/02_λ_phage_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Phages/02_λ_phage_genomic.fna"
             },
             {
                 "label": "M13 phage",
                 "value": "03_M13_phage_genomic.fna",
                 "description": "用于分子克隆和序列分析的工具。",
-                "uri": "www.openbiobank.xyz/Phages/03_M13_phage_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Phages/03_M13_phage_genomic.fna"
             },
             {
                 "label": "φX174 phage",
                 "value": "04_phiX174_phage_genomic.fna",
                 "description": "首个被完全序列化的DNA基因组，对病毒基因组研究具有历史意义。",
-                "uri": "www.openbiobank.xyz/Phages/04_phiX174_phage_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Phages/04_phiX174_phage_genomic.fna"
             },
             {
                 "label": "T7 phage",
                 "value": "05_T7_phage_genomic.fna",
                 "description": "在表达宿主细胞中的蛋白质生产方面非常重要。",
-                "uri": "www.openbiobank.xyz/Phages/05_T7_phage_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Phages/05_T7_phage_genomic.fna"
             }
         ]
     },
@@ -43,31 +43,31 @@
                 "label": "HIV-1",
                 "value": "01_HIV-1_genomic.fna",
                 "description": "对公共卫生有重大影响的病毒，艾滋病病毒的主要类型。",
-                "uri": "www.openbiobank.xyz/Viruses/01_HIV-1_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Viruses/01_HIV-1_genomic.fna"
             },
             {
                 "label": "Influenza A virus",
                 "value": "02_Influenza_A_virus_genomic.fna",
                 "description": "流感的主要病原体，具有高度变异性。",
-                "uri": "www.openbiobank.xyz/Viruses/02_Influenza_A_virus_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Viruses/02_Influenza_A_virus_genomic.fna"
             },
             {
                 "label": "Hepatitis C virus (HCV)",
                 "value": "03_Hepatitis_C_virus_genomic.fna",
                 "description": "肝炎领域的重要病毒。",
-                "uri": "www.openbiobank.xyz/Viruses/03_Hepatitis_C_virus_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Viruses/03_Hepatitis_C_virus_genomic.fna"
             },
             {
                 "label": "SARS-CoV-2",
                 "value": "04_SARS-CoV-2_genomic.fna",
                 "description": "引起COVID-19疾病的新型冠状病毒。",
-                "uri": "www.openbiobank.xyz/Viruses/04_SARS-CoV-2_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Viruses/04_SARS-CoV-2_genomic.fna"
             },
             {
                 "label": "Human papillomavirus (HPV)",
                 "value": "05_Human_papillomavirus_genomic.fna",
                 "description": "与多种癌症相关的病毒。",
-                "uri": "www.openbiobank.xyz/Viruses/05_Human_papillomavirus_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Viruses/05_Human_papillomavirus_genomic.fna"
             }
         ]
     },
@@ -79,31 +79,31 @@
                 "label": "Escherichia coli",
                 "value": "01_Escherichia_coli_genomic.fna",
                 "description": "在分子生物学研究中作为模型生物。",
-                "uri": "www.openbiobank.xyz/Bacteria/01_Escherichia_coli_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Bacteria/01_Escherichia_coli_genomic.fna"
             },
             {
                 "label": "Bacillus subtilis",
                 "value": "02_Bacillus_subtilis_genomic.fna",
                 "description": "作为革兰氏阳性细菌的模型。",
-                "uri": "www.openbiobank.xyz/Bacteria/02_Bacillus_subtilis_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Bacteria/02_Bacillus_subtilis_genomic.fna"
             },
             {
                 "label": "Mycobacterium tuberculosis",
                 "value": "03_Mycobacterium_tuberculosis_genomic.fna",
                 "description": "结核病的病原体。",
-                "uri": "www.openbiobank.xyz/Bacteria/03_Mycobacterium_tuberculosis_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Bacteria/03_Mycobacterium_tuberculosis_genomic.fna"
             },
             {
                 "label": "Staphylococcus aureus",
                 "value": "04_Staphylococcus_aureus_genomic.fna",
                 "description": "与多种医院获得性和社区获得性感染相关。",
-                "uri": "www.openbiobank.xyz/Bacteria/04_Staphylococcus_aureus_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Bacteria/04_Staphylococcus_aureus_genomic.fna"
             },
             {
                 "label": "Pseudomonas aeruginosa",
                 "value": "05_Pseudomonas_aeruginosa_genomic.fna",
                 "description": "对免疫系统受损宿主具有高度致病性。",
-                "uri": "www.openbiobank.xyz/Bacteria/05_Pseudomonas_aeruginosa_genomic.fna"
+                "uri": "https://api.openbiobank.xyz/Bacteria/05_Pseudomonas_aeruginosa_genomic.fna"
             }
         ]
     },
@@ -118,82 +118,82 @@
                     {
                         "label": "BK006934.2",
                         "value": "BK006934.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006934.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006934.2.fna"
                     },
                     {
                         "label": "BK006935.2",
                         "value": "BK006935.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006935.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006935.2.fna"
                     },
                     {
                         "label": "BK006936.2",
                         "value": "BK006936.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006936.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006936.2.fna"
                     },
                     {
                         "label": "BK006937.2",
                         "value": "BK006937.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006937.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006937.2.fna"
                     },
                     {
                         "label": "BK006938.2",
                         "value": "BK006938.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006938.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006938.2.fna"
                     },
                     {
                         "label": "BK006939.2",
                         "value": "BK006939.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006939.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006939.2.fna"
                     },
                     {
                         "label": "BK006940.2",
                         "value": "BK006940.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006940.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006940.2.fna"
                     },
                     {
                         "label": "BK006941.2",
                         "value": "BK006941.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006941.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006941.2.fna"
                     },
                     {
                         "label": "BK006942.2",
                         "value": "BK006942.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006942.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006942.2.fna"
                     },
                     {
                         "label": "BK006943.2",
                         "value": "BK006943.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006943.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006943.2.fna"
                     },
                     {
                         "label": "BK006944.2",
                         "value": "BK006944.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006944.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006944.2.fna"
                     },
                     {
                         "label": "BK006945.2",
                         "value": "BK006945.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006945.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006945.2.fna"
                     },
                     {
                         "label": "BK006946.2",
                         "value": "BK006946.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006946.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006946.2.fna"
                     },
                     {
                         "label": "BK006947.2",
                         "value": "BK006947.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006947.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006947.2.fna"
                     },
                     {
                         "label": "BK006948.2",
                         "value": "BK006948.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006948.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006948.2.fna"
                     },
                     {
                         "label": "BK006949.2",
                         "value": "BK006949.2.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006949.2.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/01_Saccharomyces_cerevisiae_genomic/BK006949.2.fna"
                     }
                 ]
             },
@@ -204,42 +204,42 @@
                     {
                         "label": "CP017623.1",
                         "value": "CP017623.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017623.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017623.1.fna"
                     },
                     {
                         "label": "CP017624.1",
                         "value": "CP017624.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017624.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017624.1.fna"
                     },
                     {
                         "label": "CP017625.1",
                         "value": "CP017625.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017625.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017625.1.fna"
                     },
                     {
                         "label": "CP017626.1",
                         "value": "CP017626.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017626.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017626.1.fna"
                     },
                     {
                         "label": "CP017627.1",
                         "value": "CP017627.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017627.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017627.1.fna"
                     },
                     {
                         "label": "CP017628.1",
                         "value": "CP017628.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017628.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017628.1.fna"
                     },
                     {
                         "label": "CP017629.1",
                         "value": "CP017629.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017629.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017629.1.fna"
                     },
                     {
                         "label": "CP017630.1",
                         "value": "CP017630.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017630.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/02_Candida_albicans_genomic/CP017630.1.fna"
                     }
                 ]
             },
@@ -250,42 +250,42 @@
                     {
                         "label": "NC_007194.1",
                         "value": "NC_007194.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007194.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007194.1.fna"
                     },
                     {
                         "label": "NC_007195.1",
                         "value": "NC_007195.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007195.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007195.1.fna"
                     },
                     {
                         "label": "NC_007196.1",
                         "value": "NC_007196.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007196.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007196.1.fna"
                     },
                     {
                         "label": "NC_007197.1",
                         "value": "NC_007197.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007197.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007197.1.fna"
                     },
                     {
                         "label": "NC_007198.1",
                         "value": "NC_007198.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007198.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007198.1.fna"
                     },
                     {
                         "label": "NC_007199.1",
                         "value": "NC_007199.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007199.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007199.1.fna"
                     },
                     {
                         "label": "NC_007200.1",
                         "value": "NC_007200.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007200.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007200.1.fna"
                     },
                     {
                         "label": "NC_007201.1",
                         "value": "NC_007201.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007201.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/03_Aspergillus_fumigatus_genomic/NC_007201.1.fna"
                     }
                 ]
             },
@@ -296,107 +296,107 @@
                     {
                         "label": "CM002236.1",
                         "value": "CM002236.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002236.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002236.1.fna"
                     },
                     {
                         "label": "CM002237.1",
                         "value": "CM002237.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002237.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002237.1.fna"
                     },
                     {
                         "label": "CM002238.1",
                         "value": "CM002238.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002238.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002238.1.fna"
                     },
                     {
                         "label": "CM002239.1",
                         "value": "CM002239.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002239.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002239.1.fna"
                     },
                     {
                         "label": "CM002240.1",
                         "value": "CM002240.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002240.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002240.1.fna"
                     },
                     {
                         "label": "CM002241.1",
                         "value": "CM002241.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002241.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002241.1.fna"
                     },
                     {
                         "label": "CM002242.1",
                         "value": "CM002242.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002242.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/CM002242.1.fna"
                     },
                     {
                         "label": "KC683708.1",
                         "value": "KC683708.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KC683708.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KC683708.1.fna"
                     },
                     {
                         "label": "KI440765.1",
                         "value": "KI440765.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440765.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440765.1.fna"
                     },
                     {
                         "label": "KI440766.1",
                         "value": "KI440766.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440766.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440766.1.fna"
                     },
                     {
                         "label": "KI440767.1",
                         "value": "KI440767.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440767.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440767.1.fna"
                     },
                     {
                         "label": "KI440768.1",
                         "value": "KI440768.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440768.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440768.1.fna"
                     },
                     {
                         "label": "KI440769.1",
                         "value": "KI440769.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440769.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440769.1.fna"
                     },
                     {
                         "label": "KI440770.1",
                         "value": "KI440770.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440770.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440770.1.fna"
                     },
                     {
                         "label": "KI440771.1",
                         "value": "KI440771.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440771.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440771.1.fna"
                     },
                     {
                         "label": "KI440772.1",
                         "value": "KI440772.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440772.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440772.1.fna"
                     },
                     {
                         "label": "KI440773.1",
                         "value": "KI440773.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440773.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440773.1.fna"
                     },
                     {
                         "label": "KI440774.1",
                         "value": "KI440774.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440774.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440774.1.fna"
                     },
                     {
                         "label": "KI440775.1",
                         "value": "KI440775.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440775.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440775.1.fna"
                     },
                     {
                         "label": "KI440776.1",
                         "value": "KI440776.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440776.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440776.1.fna"
                     },
                     {
                         "label": "KI440777.1",
                         "value": "KI440777.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440777.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/04_Neurospora_crassa_genomic/KI440777.1.fna"
                     }
                 ]
             },
@@ -407,32 +407,32 @@
                     {
                         "label": "CM041205.1",
                         "value": "CM041205.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/CM041205.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/CM041205.1.fna"
                     },
                     {
                         "label": "CM041206.1",
                         "value": "CM041206.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/CM041206.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/CM041206.1.fna"
                     },
                     {
                         "label": "CM041207.1",
                         "value": "CM041207.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/CM041207.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/CM041207.1.fna"
                     },
                     {
                         "label": "JALGSM010000001.1",
                         "value": "JALGSM010000001.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/JALGSM010000001.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/JALGSM010000001.1.fna"
                     },
                     {
                         "label": "JALGSM010000005.1",
                         "value": "JALGSM010000005.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/JALGSM010000005.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/JALGSM010000005.1.fna"
                     },
                     {
                         "label": "JALGSM010000006.1",
                         "value": "JALGSM010000006.1.fna",
-                        "uri": "www.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/JALGSM010000006.1.fna"
+                        "uri": "https://api.openbiobank.xyz/Fungi/05_Schizosaccharomyces_pombe_genomic/JALGSM010000006.1.fna"
                     }
                 ]
             }
